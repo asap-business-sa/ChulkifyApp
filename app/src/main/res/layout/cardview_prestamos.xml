@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blanco_trans"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_valor_prestamo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="xxxx.xx"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_n_cuotas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="xxxx"
+                        android:layout_gravity="right"
+                        android:textColor="@color/negro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_valor_cuota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="xxxx"
+                        android:layout_gravity="right"
+                        android:textColor="@color/negro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_fecha_inicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="dd/mm/aa"
+                        android:layout_gravity="right"
+                        android:textColor="@color/negro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_fecha_fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="dd/mm/aa"
+                        android:layout_gravity="right"
+                        android:textColor="@color/negro"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_estado_p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:text="xxxx"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/btn_ver_detalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tema_boton_gris"
+                        android:drawableLeft="@drawable/neg"
+                        android:paddingLeft="10dp"
+                        android:text=""
+                        android:textColor="@color/negro" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "670095432508",
+    "firebase_url": "https://chulkify.firebaseio.com",
+    "project_id": "chulkify",
+    "storage_bucket": "chulkify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670095432508:android:26f492288494934b529c39",
+        "android_client_info": {
+          "package_name": "com.example.chulkify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670095432508-sc0bslncdmbu3vigdk5rusm3meuummss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chulkify",
+            "certificate_hash": "8e70ce578a6532de8fe95d93b625f72c26b3307c"
+          }
+        },
+        {
+          "client_id": "670095432508-03h0bbqugjqpmgoh4jhgb763i489ijpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOH_7K3SJn8HJ9qMhDQyWkFc7nDCIBxuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670095432508-03h0bbqugjqpmgoh4jhgb763i489ijpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

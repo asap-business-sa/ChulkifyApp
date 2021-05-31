@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ima4"
+    tools:context=".transacciones_pg.transaccionesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_refres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/refrescar"
+                android:drawablePadding="12dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/blanco"
+                android:background="@drawable/tema_boton"
+                android:text="@string/refrescar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_comunidad_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/titulos"
+                    android:textSize="25dp"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25dp"
+                android:text="@string/bienvenido" />
+            <TextView
+                android:id="@+id/textViewm11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blanco"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25dp"
+                android:text="   " />
+
+            <TextView
+                android:id="@+id/txt_usuario_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25dp"
+                android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView92"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/negro"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="25dp"
+                    android:text="@string/bienvenida_aportes" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        android:padding="5dp"
+        android:gravity="top"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:padding="5dp"
+                android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/tema_blanco_trans"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/negro"/>
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="65"
+
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/negro"
+                                    android:text="@string/fondos_most" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/negro"
+                                    android:text="@string/aportes_hoy_most" />
+
+                                <TextView
+                                    android:id="@+id/textView1555"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/negro"
+                                    android:text="@string/retiros_hoy_most" />
+
+                                <TextView
+                                    android:id="@+id/textView1kk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/negro"
+                                    android:text="@string/ult_mes_most"
+                                    android:visibility="gone"/>
+
+                                <TextView
+                                    android:id="@+id/textView1kjk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/negro"
+                                    android:text="@string/ult_val_ap_most"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="35"
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:id="@+id/tv_fondos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="$xx.xx" />
+
+                                <TextView
+                                    android:id="@+id/tv_ap_hoy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="$xx.xx" />
+
+                                <TextView
+                                    android:id="@+id/tv_rt_hoy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="$xx.xx" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_fecha_ult_ap"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="$xx.xx"
+                                    android:visibility="gone"/>
+                                <TextView
+                                    android:id="@+id/tv_vaalor_ult_ap"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:text="$xx.xx"
+                                    android:visibility="gone"/>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/textView13333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/negro"/>
+                        <TextView
+                            android:id="@+id/textView133366"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/negro"/>
+                        <TextView
+                            android:id="@+id/tv_mensaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@color/negro"
+                            android:textColor="@color/verde"
+                            android:drawableLeft="@drawable/correcto"
+                            android:drawableTint="@color/verde"
+                            android:textSize="18dp"
+                            android:text="xxxx"
+
+                            android:visibility="gone"/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55"
+            android:padding="5dp"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_aportar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/transparente"
+                app:srcCompat="@drawable/apor_us"  />
+
+            <ImageButton
+                android:id="@+id/btn_retiros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/transparente"
+                app:srcCompat="@drawable/reti_us" />
+
+
+
+            <ImageButton
+                android:id="@+id/btn_historial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/transparente"
+                app:srcCompat="@drawable/hist_tran" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

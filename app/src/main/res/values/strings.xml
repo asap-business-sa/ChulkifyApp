@@ -1,0 +1,244 @@
+<resources>
+
+    <!--links -->
+    <string name="link_login">http://www.marlonmym.tk/chulkify/login/login.php</string>
+    <string name="link_registro_us">http://www.marlonmym.tk/chulkify/nuevo_usuario/add_us.php</string>
+    <string name="link_registro_cm">http://www.marlonmym.tk/chulkify/nueva_comunidad/add_comunidad.php</string>
+    <string name="link_actualizar">http://www.marlonmym.tk/chulkify/links/version.php</string>
+    <string name="link_consultar_comunidad">http://www.marlonmym.tk/chulkify/consultas/buscar_comu.php</string>
+    <string name="link_consulta_datos">http://www.marlonmym.tk/chulkify/consultas/consultas_ap_rt_fd_lap.php</string>
+    <string name="link_consulta_comu_admin">http://www.marlonmym.tk/chulkify/consultas/consulta_comu_admin.php</string>
+    <string name="link_buscar_usuarios">http://www.marlonmym.tk/chulkify/soli_comunidad/buscar_usu_per_comu.php</string>
+    <string name="link_generar_solicitud_ing_grupo">http://www.marlonmym.tk/chulkify/soli_comunidad/add_notificacion.php</string>
+    <string name="link_generar_solicitud_prestamos">http://www.marlonmym.tk/chulkify/soli_comunidad/add_notificacion_pres.php</string>
+    <string name="link_consultar_estd_soli_union">http://www.marlonmym.tk/chulkify/soli_comunidad/soli_estados.php</string>
+    <string name="link_btn_cancelar_soli">http://www.marlonmym.tk/chulkify/soli_comunidad/cancelar.php</string>
+    <string name="link_captura_solicitud">http://www.marlonmym.tk/chulkify/soli_comunidad/capturar_solicitudes.php</string>
+    <string name="link_aceptar_solicitudes">http://www.marlonmym.tk/chulkify/soli_comunidad/aceptar.php</string>
+    <string name="link_rechazar_solicitud">http://www.marlonmym.tk/chulkify/soli_comunidad/rechazar.php</string>
+    <string name="link_aportar">http://www.marlonmym.tk/chulkify/aportar/aportar_us.php</string>
+    <string name="link_retirar">http://www.marlonmym.tk/chulkify/retirar/retirar_us.php</string>
+    <string name="link_consultar_prestamos">http://www.marlonmym.tk/chulkify/prestamos/preparar_soli_pres.php</string>
+    <string name="link_estado_solicitud_prestamos">http://www.marlonmym.tk/chulkify/prestamos/estado_soli_prestamo.php</string>
+    <string name="link_consulta_fondos_us_comu">http://www.marlonmym.tk/chulkify/prestamos/cargar_fondos.php</string>
+
+    <string name="link_udt_estados">http://www.marlonmym.tk/chulkify/prestamos/udt_estado_pres.php</string>
+    <string name="link_gp_crea_pres">http://www.marlonmym.tk/chulkify/prestamos/gp_crear_prestamo.php</string>
+    <string name="link_us_crea_pres">http://www.marlonmym.tk/chulkify/prestamos/us_crear_prestamo.php</string>
+    <string name="link_ult_prestamo">http://www.marlonmym.tk/chulkify/prestamos/ult_prestamo.php</string>
+
+
+    <string name="link_consult_prest">http://www.marlonmym.tk/chulkify/prestamos/cargar_ult_prestamo.php</string>
+    <string name="link_consult_cuota">http://www.marlonmym.tk/chulkify/prestamos/cargar_cuota_prestamo.php</string>
+    <string name="link_pagar_cuota">http://www.marlonmym.tk/chulkify/prestamos/pagar_cuota.php</string>
+
+    <string name="link_consultar_usuarios">http://www.marlonmym.tk/chulkify/super_us/consultar_usuarios.php</string>
+    <string name="link_consultar_grupo">http://www.marlonmym.tk/chulkify/super_us/consultar_grupo.php</string>
+
+    <!--links -->
+
+
+    <!--super su-->
+    <string name="sus_usuarios">Listar Usuarios</string>
+    <string name="sus_comunidad">Listar Comunidades</string>
+    <string name="listar">Listar : </string>
+    <string name="inf_sus">Informacion de usuarios registrados</string>
+    <!--super su-->
+
+
+    <!--constantes-->
+    <string name="version">v3.8</string>
+    <string name="taza_transaccion">0.25</string>
+    <string name="maximo">500</string>
+    <string name="interes_prestamo">0.05</string>
+    <!--constantes-->
+
+    <!--cardviw-->
+    <string name="tipo_solicitud">Solicitud de:</string>
+    <string name="v_prestamo">El valor a prestar es de:  </string>
+    <string name="d_prestamo">Diferido a:  </string>
+    <!--cardviw-->
+
+
+    <!--espera-->
+    <string name="titulo_soli_pres">Has solicitado un prestamo de:</string>
+    <string name="difer_en">Diferido en:  </string>
+    <string name="cuotas_de">cuotas de :  </string>
+    <!--espera-->
+
+    <!--prestamos-->
+    <string name="msj_ini_prestamos">Prestamos</string>
+    <string name="no_prestamo">USTED NO HA REALIZADO PRESTAMOS</string>
+    <string name="val_ult_prestamo">Su ultimo prestamo fue de: </string>
+    <string name="fec_ult_prestamo">Fue hecho en: </string>
+    <string name="soli_espera_o_negada">mensaje solicitud en espera o negada</string>
+    <string name="soli_aceptada">Tiene una solicitud  de prestamos aceptadas, el monto a prestar es de:</string>
+    <string name="msj_monto_a_prestar">El monto a prestar es:</string>
+    <string name="prestamo_liquidado_msj">Su ultimo prestamo fue liquidado por acumulacion de cuotas en MORA</string>
+
+    <string name="msj_prestamo_pagando">    Usted esta pagando un prestamo</string>
+    <string name="msj_prestamo_refinanciado">  El prestamo que esta pagando esta refinanciado</string>
+    <string name="msj_prestamo_mora">  El prestamo actual tiene un saldo por pagar de la cuota anterior, PONGASE AL DIA CON SUS PAGOS PARA EVITAR DEBITOS EN SU CUENTA Y EN LA DE LOS MIEMBROS DEL GRUPO </string>
+    <string name="msj_prestamo_refi_mora">  Su prestamo actual esta refinanciado y tiene una cuota atrazada, PORFAVOR PONERCE AL DIA PARA EVITAR PERJUICIOS EN LA COMUNIDAD</string>
+    <string name="cuota_actual">La cuota actual es:</string>
+    <string name="valor_pago_cuota">El valor de la cuota es:</string>
+    <string name="saldo_cuota">el saldo a pagar es:</string>
+    <string name="saldo_mora">el saldo de la cuota atrazada es:</string>
+
+    <string name="msj_soli_prestamo_espera">TIENE UNA SOLICITUD DE PRESTAMO EN ESPERA</string>
+    <string name="msj_soli_prestamo_negada">SU SOLICITUD DE PRESTAMO FUE NEGADA, CANCELE LA SOLICITUD Y PONGASE EN CONTACTO CON LOS INTEGRANTES DE SU GRUPO PARA GENERAR UNA NUEVA SOLICITUD</string>
+    <string name="msj_soli_prestamo_aceptada">SU SOLICITUD DE PRESTAMO FUE ACEPTADA</string>
+
+    <string name="n_cuota_cartllia">Cuota N°: </string>
+    <string name="abonar">Abonar</string>
+    <string name="abonos">Abonos: </string>
+    <string name="saldo">Saldo: </string>
+    <string name="detalle">DETALLE</string>
+    <string name="cuotas_del_prestamo">Estas son las cuotas de tu prestamo</string>
+    <string name="msj_prestamo_mora_2">Recuerde pagar a tiempo para evitar perjuicios en su cuenta y en la de sus compañeros</string>
+    <string name="cartilla_pago">Cartilla de pago</string>
+    <string name="n_prestamo">Prestamo N°:</string>
+    <string name="v_prestamo_t">Valor del Prestamo</string>
+    <!--prestamos-->
+
+    <string name="app_name">Chulkify</string>
+    <string name="usuario">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="re_pass">Confirme su contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="nombre">Nombres</string>
+    <string name="apellido">Apellidos</string>
+    <string name="cedula">Cedula</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="direccion">Direccion</string>
+    <string name="telefono">Telefono</string>
+    <string name="guardar">guardar</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrar">o registrar</string>
+    <string name="olv_contraseña">¿Olvidastes tu contraseña?</string>
+    <string name="bienvenida">Bienvenidos a CHULKIFY</string>
+    <string name="no_comunidad">Usted no pertenece a una comunidad</string>
+    <string name="crear_comu">Crear una nueva comunidad</string>
+    <string name="unirse_comu">Unirse a una comunidad existente</string>
+    <string name="nom_comu">nombre nueva comunidad</string>
+    <string name="codigo_unico">codigo para invitados</string>
+    <string name="refrescar">Refrescar</string>
+    <string name="bienvenido">Bienvenido  </string>
+    <string name="qdeseas_hacer">¿Que deseas hacer?</string>
+
+    <!--//mensajes barra de progreso -->
+    <string name="Superusu">Super Usuario</string>
+    <string name="cargar">Cargando Datos...</string>
+    <string name="cargar_aporte">Acreditando en su cuenta ...</string>
+    <string name="cargar_retiro">Realizando debito en la cuenta ...</string>
+
+    <string name="info_comu">Informacion de tu comunidad</string>
+    <string name="cog_inv">Codigo de invitacion</string>
+    <string name="t_usuario">Total de usuarios</string>
+    <string name="t_ganancia">Tu ganancia</string>
+
+    <string name="nombre_comu">Nombre comunidad: </string>
+    <string name="n_integrantes">N° integrantes:</string>
+    <string name="ubicacion_comu">Ubicacion:</string>
+    <string name="admind_comu">Administrador:</string>
+
+    <string name="env_solicitud">Enviar solicitud</string>
+
+    <string name="buscar">Buscar</string>
+    <string name="c_sesion">Cerrar sesion</string>
+    <string name="usuario_c">Confg. usuario</string>
+
+    <string name="copiar">Copiar</string>
+
+    <string name="cancelar_soli">Cancelar Solicitud</string>
+    <string name="aceptadas">Aceptadas</string>
+    <string name="espera">En espera</string>
+    <string name="negadas">Negadas</string>
+
+    <string name="iniciar">Iniciando . . .</string>
+    <string name="tienes_cuenta">Tienes cuenta ?</string>
+    <string name="o_regis">O registrate</string>
+    <string name="ini_sesion">Iniciar sesion</string>
+    <string name="o_google">O inicia sesion con google</string>
+    <string name="regis">Registrarse</string>
+    <string name="google">Google</string>
+
+    <string name="inf_solicitud">Informacion de tu solicitud</string>
+    <string name="cadu_soli">Tu solicitud caduca:</string>
+
+    <string name="bienvenida_aportes">Estos son tus Aportes</string>
+    <string name="total_aportes">Total : </string>
+    <string name="ult_mes">Este mes : </string>
+    <string name="val_aportar">Aporte </string>
+    <string name="aportar">Realizar aporte</string>
+
+    <string name="bienvenida_retiro">Estos son tus Retiros</string>
+    <string name="total_retiro">Total : </string>
+    <string name="val_retiro">Retiro</string>
+    <string name="retiro">Realizar Retiro</string>
+
+    <!--//confirmacion retiro -->
+    <string name="confirmar_retiro">Confirmar Retiro</string>
+    <string name="retiro_tran"> Retiro:</string>
+
+
+    <!--//confirmacion aporte -->
+    <string name="conf_transaccion">confirma tu transaccion</string>
+    <string name="fecha_tran">Fecha :</string>
+    <string name="usuario_tran">Usuario :</string>
+    <string name="comu_tran">Com/Gp :</string>
+    <string name="ci_tran">CI :</string>
+    <string name="aporte_tran">Aporte :</string>
+    <string name="Valor_tran">Valor / transaccion :</string>
+    <string name="total_tran">Total :</string>
+    <string name="confirma_aporte">Confirmar Aporte</string>
+
+    <string name="msj_costo_tran">¡..Recuerda toda transaccion tiene un costo de $0.25, tal valor es descontado del aporte que se va ah realizar...!</string>
+
+    <string name="acep">Aceptar</string>
+    <string name="recha">Rechazar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_retiro">activity_retiro</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="fondos_most">Fondos:</string>
+    <string name="aportes_hoy_most">Hoy aporto:</string>
+    <string name="retiros_hoy_most">Hoy ha retirado:</string>
+    <string name="ult_mes_most">Mes ultimo aporte:</string>
+    <string name="ult_val_ap_most">Valor ultimo aporte:</string>
+
+    <string name="cargando">Cargando . . .</string>
+
+    <string name="solicitud_caducara">Tu Solicitud Caducara en:</string>
+    <string name="cancelar">Cancelar Solicitud</string>
+    <string name="inf_solicitud_prestamo">Informacion de Solicitud Prestamo</string>
+    <string name="bienvenida_prestamos">Estos son tus Prestamo:</string>
+    <string name="val_prestamo">Prestamo</string>
+    <string name="prestamo">Cargar datos de Prestamo</string>
+    <string name="conf_prestamo">Confirmar Prestamo:</string>
+    <string name="valor_prestar">Valor a Prestar:</string>
+    <string name="interes">Interes(5%):</string>
+    <string name="diferido">Diferido:</string>
+    <string name="valor_cuota">Valor de la cuota:</string>
+    <string name="total_prestamo">Total prestamo:</string>
+    <string name="fecha_limite"> Fecha Limite:</string>
+    <string name="soli_pretamo"> Solicitar Prestamo</string>
+    <string name="val_meses">Meses</string>
+
+
+    <string name="x_valor">xxxx.xx:</string>
+    <string name="x_fecha">dd/mm/aa:</string>
+
+
+    <!-- Strings historial transacciones -->
+
+
+</resources>

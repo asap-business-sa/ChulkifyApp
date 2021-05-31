@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ima4"
+    tools:context=".nueva_comunidad.nueva_comunidad">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:textColor="@color/titulos"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:text="Gracias por crear una nueva comunidad" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/logo_comu" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:paddingLeft="30dp"
+            android:paddingTop="35dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="35dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tema_blanco_trans"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Datos de tu nueva comunidad" />
+
+                <EditText
+                    android:id="@+id/txt_nombre_comu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/n_comu"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:maxLength="20"
+                    android:hint="@string/nom_comu"
+                    android:inputType="textPersonName" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txt_codigo_comu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:layout_marginBottom="25dp"
+
+                        android:background="@drawable/caja_texto_style2"
+                        android:drawableLeft="@drawable/codigo"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="pin de invitado"
+                        android:maxLength="4"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="10"
+                        android:textSize="20dp"
+                        android:text="#" />
+
+                    <TextView
+                        android:id="@+id/txt_ci"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_weight="30"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txt_ciudad_comu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/ciudad"
+                    android:drawablePadding="12dp"
+                    android:maxLength="30"
+                    android:ems="10"
+                    android:hint="@string/ciudad"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_registrar" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/tema_boton"
+            android:drawableLeft="@drawable/regist_uss"
+            android:drawablePadding="12dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/blanco"
+            android:text="Crear Grupo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"></LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

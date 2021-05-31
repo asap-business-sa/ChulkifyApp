@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ima4"
+    tools:context=".prestamos.Activity_menu_prestamos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_refres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/refrescar"
+                android:drawablePadding="12dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/blanco"
+                android:background="@drawable/tema_boton"
+                android:text="@string/refrescar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_comunidad_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/titulos"
+                    android:textSize="25dp"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="TextView" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/negro"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="25dp"
+                    android:text="@string/bienvenido" />
+                <TextView
+                    android:id="@+id/textViewm11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="25dp"
+                    android:text="   " />
+
+                <TextView
+                    android:id="@+id/txt_usuario_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="25dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView92"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/negro"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="25dp"
+                    android:text="@string/msj_ini_prestamos" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="65"
+            android:padding="5dp"
+            android:gravity="top"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:background="@drawable/tema_blanco_trans"
+                        android:layout_height="0dp"
+                        android:layout_weight="70">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+
+
+                            <LinearLayout
+                                android:id="@+id/op_no_prestamos_msj"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/negro"
+                                    android:padding="5dp"
+                                    android:orientation="horizontal">
+
+
+
+                                    <TextView
+                                        android:id="@+id/text_no_pres"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:paddingLeft="15dp"
+                                        android:drawableLeft="@drawable/circulo_x_b"
+                                        android:textSize="20dp"
+                                        android:textColor="@color/blanco"
+                                        android:text="@string/no_prestamo" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/op_prestamo_pagado"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/text_0011"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/negro"
+                                        android:text="@string/val_ult_prestamo" />
+
+                                    <TextView
+                                        android:id="@+id/text_val_ult_pres"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="30"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/colorAccent"
+                                        android:text="$xxxx.xx" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/text_0012"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/negro"
+                                        android:text="@string/fec_ult_prestamo" />
+
+                                    <TextView
+                                        android:id="@+id/text_fch_ult_pres"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="30"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/colorAccent"
+                                        android:text="dd/mm/aaaa" />
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/op_soli_activa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:id="@+id/text_msj_soli_activa_espera"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:background="@color/negro"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_msj_001"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:paddingLeft="15dp"
+                                        android:drawableLeft="@drawable/espera_soli"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/blanco"
+                                        android:text="@string/msj_soli_prestamo_espera" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/text_msj_soli_activa_aceptada"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:background="@color/negro"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_msj_002"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:paddingLeft="15dp"
+                                        android:drawableLeft="@drawable/soli_acep"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/verde"
+                                        android:text="@string/msj_soli_prestamo_aceptada" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/text_msj_soli_activa_negada"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:background="@color/negro"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_msj_003"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:paddingLeft="15dp"
+                                        android:drawableTop="@drawable/no_money"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/rojo"
+                                        android:text="@string/msj_soli_prestamo_negada" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/txt_msj_soli_e_a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/txt0012"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        android:layout_gravity="center"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/negro"
+                                        android:text="@string/msj_monto_a_prestar" />
+                                    <TextView
+                                        android:id="@+id/text_val_soli_activa"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="30"
+                                        android:layout_gravity="center"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/colorAccent"
+                                        android:text="$xxxx.xx" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/text_msj_pres_liquidado"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:background="@color/negro"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_msj_00021"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:paddingLeft="15dp"
+                                        android:drawableLeft="@drawable/adver"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/blanco"
+                                        android:text="@string/prestamo_liquidado_msj" />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/op_pres_activo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:id="@+id/msj_prestamo_pagando"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_00114"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:drawableLeft="@drawable/rectangulo_dollar"
+                                        android:paddingLeft="10dp"
+                                        android:drawablePadding="5dp"
+                                        android:background="@color/negro"
+                                        android:textColor="@color/blanco"
+                                        android:text="@string/msj_prestamo_pagando" />
+
+
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/msj_prestamo_refinanciado"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_001mn14"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:drawableLeft="@drawable/refinanciado"
+                                        android:paddingLeft="10dp"
+                                        android:drawablePadding="5dp"
+                                        android:background="@color/negro"
+                                        android:textColor="@color/blanco"
+                                        android:gravity="center"
+                                        android:text="@string/msj_prestamo_refinanciado" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/msj_prestamo_r_mora"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_0011gf4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:drawableLeft="@drawable/refi_mora_rojo"
+                                        android:paddingLeft="10dp"
+                                        android:gravity="center"
+                                        android:drawablePadding="5dp"
+                                        android:background="@color/negro"
+                                        android:textColor="@color/blanco"
+                                        android:text="@string/msj_prestamo_refi_mora" />
+
+
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/msj_prestamo_mora"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_00lk11gf4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:drawableLeft="@drawable/mora_rojo"
+                                        android:paddingLeft="10dp"
+                                        android:gravity="center"
+                                        android:drawablePadding="5dp"
+                                        android:background="@color/negro"
+                                        android:textColor="@color/blanco"
+                                        android:text="@string/msj_prestamo_mora" />
+
+
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/msj_prestamo_mora_msj"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/text_014j04"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/negro"
+                                        android:text="@string/saldo_mora" />
+
+                                    <TextView
+                                        android:id="@+id/text_val_pres"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="30"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/colorAccent"
+                                        android:text="$xxxx.xx" />
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/text_0544j04"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/negro"
+                                        android:text="@string/cuota_actual" />
+
+                                    <TextView
+                                        android:id="@+id/text_cuota_actual"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="30"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/colorAccent"
+                                        android:text="$xxxx.xx" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/text_014jgff04"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/negro"
+                                        android:text="@string/valor_pago_cuota" />
+
+                                    <TextView
+                                        android:id="@+id/text_valor_pago_cuota"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="30"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/colorAccent"
+                                        android:text="$xxxx.xx" />
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/text_014i4j04"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="70"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/negro"
+                                        android:text="@string/saldo_cuota" />
+
+                                    <TextView
+                                        android:id="@+id/text_saldo_cuota"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="30"
+                                        android:layout_gravity="right"
+                                        android:textSize="16dp"
+                                        android:textColor="@color/colorAccent"
+                                        android:text="$xxxx.xx" />
+
+
+
+                                </LinearLayout>
+
+
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+                    </ScrollView>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="30"
+                        android:padding="5dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingRight="35dp"
+                                android:paddingLeft="35dp"
+                                android:background="@drawable/tema_negro_trans"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/btn_soli_pres"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:paddingRight="20dp"
+                                    android:background="@color/transparente"
+                                    app:srcCompat="@drawable/b_prestamo"
+                                    android:visibility="gone"/>
+
+                                <ImageButton
+                                    android:id="@+id/btn_ht_pres"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:paddingRight="20dp"
+                                    android:background="@color/transparente"
+                                    app:srcCompat="@drawable/b_h_prestamo"
+                                    android:visibility="gone"/>
+
+                                <ImageButton
+                                    android:id="@+id/btn_estado_sol_pres"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:paddingRight="20dp"
+                                    android:background="@color/transparente"
+                                    app:srcCompat="@drawable/b_e_sol_prest"
+                                    android:visibility="gone"/>
+
+                                <ImageButton
+                                    android:id="@+id/btn_cartilla_pago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:paddingRight="20dp"
+                                    android:background="@color/transparente"
+                                    app:srcCompat="@drawable/b_cartilla_pg"
+                                    android:visibility="gone"/>
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

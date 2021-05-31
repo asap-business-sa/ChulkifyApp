@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chulkify">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_logo_ico"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/new_logo_ico_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Comunidad"></activity>
+        <activity android:name=".ConfiguraciondeComunidad" />
+        <activity android:name=".PerfildelUsuario" />
+        <activity android:name=".super_usuario.listar_comunidad" />
+        <activity android:name=".super_usuario.listar_usuarios_Activity" />
+        <activity android:name=".login.cargar_admin_Activity" />
+        <activity android:name=".login.menu_super_us_Activity" />
+        <activity android:name=".prestamos.cartilla_pagoActivity" />
+        <activity android:name=".prestamos.Activity_enviar_solicitud_prestamo" />
+        <activity android:name=".prestamos.activity_solicitar_prestamo" />
+        <activity android:name=".prestamos.activity_espera_soli_prestamo" />
+        <activity android:name=".prestamos.cargahistorial" />
+        <activity android:name=".prestamos.Activity_menu_prestamos" />
+        <activity android:name=".login.no_usados.Activity_login" />
+        <activity android:name=".transacciones_pg.reportes.Activity_historial_transaccion" />
+        <activity android:name=".transacciones_pg.retiros.cargar_retiro" />
+        <activity android:name=".transacciones_pg.aportes.cargar_transacciones" />
+        <activity android:name=".transacciones_pg.retiros.retiro" />
+        <activity android:name=".transacciones_pg.aportes.Aportar" />
+        <activity android:name=".transacciones_pg.transaccionesActivity" />
+        <activity
+            android:name=".envio_solicitud_comu.solicitudes.Soli_notifi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.menu_inicio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.cargar3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".envio_solicitud_comu.espera_soli"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inicio"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".envio_solicitud_comu.cargar_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".envio_solicitud_comu.unir_comunidad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.cargar_1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menus_usuarios.menu_comunidad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nueva_comunidad.nueva_comunidad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.nuevo_usuario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menus_usuarios.menu_no_comunidad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.Login"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

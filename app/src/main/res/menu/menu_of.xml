@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/usuario_c" >
+        <menu >
+            <item
+                android:id="@+id/menu_iten_c_sesion"
+                android:drawableLeft="@drawable/c_session"
+                android:title="@string/c_sesion" />
+            <item
+                android:id="@+id/menu_actualizacion"
+                android:drawableLeft="@drawable/c_session"
+                android:title="actualizar" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ima4"
+    tools:context=".login.nuevo_usuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="@string/bienvenida"
+            android:textColor="@color/titulos"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="35dp"
+            android:paddingTop="35dp"
+            android:layout_weight="40">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tema_blanco_trans"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Datos Usuarios" />
+
+                <EditText
+                    android:id="@+id/txt_nu_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:drawableLeft="@drawable/user_lg"
+                    android:drawablePadding="12dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:ems="10"
+                    android:maxLength="20"
+                    android:hint="@string/usuario"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txt_nu_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/correo"
+                    android:drawablePadding="12dp"
+                    android:maxLength="35"
+                    android:ems="10"
+                    android:hint="@string/correo"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/txt_nu_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/pass_lg"
+                    android:drawablePadding="12dp"
+                    android:maxLength="20"
+                    android:ems="10"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/txt_nu_cpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/pass_lg"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="@string/re_pass"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Datos personales" />
+
+                <EditText
+                    android:id="@+id/txt_nu_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/nom"
+                    android:drawablePadding="12dp"
+                    android:maxLength="30"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/nombre" />
+
+                <EditText
+                    android:id="@+id/txt_nu_apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/nom"
+                    android:drawablePadding="12dp"
+                    android:maxLength="30"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/apellido" />
+
+                <EditText
+                    android:id="@+id/txt_nu_ci"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/ci"
+                    android:drawablePadding="12dp"
+                    android:maxLength="10"
+                    android:ems="10"
+                    android:hint="@string/cedula"
+                    android:inputType="numberSigned" />
+
+                <EditText
+                    android:id="@+id/txt_nu_ciudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/ciudad"
+                    android:drawablePadding="12dp"
+                    android:maxLength="20"
+                    android:ems="10"
+                    android:hint="@string/ciudad"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txt_nu_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/direccion"
+                    android:drawablePadding="12dp"
+                    android:maxLength="30"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/direccion" />
+
+                <EditText
+                    android:id="@+id/txt_nu_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/caja_texto_style2"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="12dp"
+                    android:maxLength="10"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="@string/telefono" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/tema_boton"
+            android:drawableLeft="@drawable/regist_uss"
+            android:drawablePadding="12dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/blanco"
+            android:text="Registrarse"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"></LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
